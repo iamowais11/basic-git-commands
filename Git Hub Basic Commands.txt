@@ -1,0 +1,77 @@
+### Git Hub Basic Commands
+1: git --version
+ It should return the Git version that is installed on your computer.
+
+ ### Configuring Your Name & Email
+2: git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+In your terminal, run the following commands to identify yourself with Git:
+
+
+### Initializing a repository
+3:  git init
+This command will generate a hidden .git directory for your project, where Git stores all 
+internal tracking data for the current repository.
+
+
+###  Staging and committing code
+Before we can commit our code, we need to place it inside the staging area.
+
+###  Checking the status
+4: git status
+This is a command that is very often used when working with Git.  
+It shows us which files have been changed, which files are tracked, etc.
+
+### Staging files
+
+From the project folder, we can use the **git add** command to add our files to the staging area, 
+which allows them to be tracked.
+
+We can add a specific file to the staging area with the following command:
+
+
+5: git add file.js
+
+
+To add multiple files, we can do this:
+
+
+6: git add file.js file2.js file3.js
+
+Instead of having to add the files individually, we can also add all the files 
+inside the project folder to the staging area:
+
+
+7: git add .
+
+By default, this adds **all the files and folders** inside the project folder
+to the staging area, from where they are ready to be committed and tracked.
+
+
+
+
+### Making commits
+
+ A **commit** is a snapshot of our code at a particular time, which we are saving to 
+ the commit history of our repository. After adding all the files that we want to track 
+ to the staging area with the `**git add`** command, we are ready to make a commit.
+
+To commit the files from the staging area, we use the following command:
+
+
+8: git commit -m "Commit message"
+
+
+Inside the quotes, we should write a **commit message** which is used to identify it in
+ the commit history.
+
+The commit message should be a descriptive summary of the changes that you are committing 
+to the repository.
+
+After executing that command, you will get the technical details about the commit printed
+ in the terminal. And that's basically it, you have successfully made a commit in your
+  project!
+
+
+📌 To create a new commit, you will need to repeat the process of adding files to the staging area and then committing them after. Again, it's very useful to use the **git status** command to see which files were modified, staged, or untracked.
+
