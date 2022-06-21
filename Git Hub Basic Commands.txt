@@ -73,5 +73,18 @@ After executing that command, you will get the technical details about the commi
   project!
 
 
-📌 To create a new commit, you will need to repeat the process of adding files to the staging area and then committing them after. Again, it's very useful to use the **git status** command to see which files were modified, staged, or untracked.
+📌 To create a new commit, you will need to repeat the process of adding files to the 
+staging area and then committing them after. Again, it's very useful to use 
+the **git status** command to see which files were modified, staged, or untracked.
+
+
+
+### Commit history
+
+To see all the commits that were made for our project, you can use the 
+following command:
+9:  git log
+The logs will show details for each commit, like the author name, the generated
+ hash for the commit, date and time of the commit, and the commit message that 
+we provided.
 
